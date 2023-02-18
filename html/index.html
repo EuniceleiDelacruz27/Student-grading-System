@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/event.js"></script>
+</head>
+<body>
+<h1>STUDENT GRADING SYSTEM</h1>
+<fieldset>
+    <legend>Student Record</legend>
+    <div>
+    <Label>Student Name <input type="text" id="name" placeholder=
+    "Last Name, First Name M.I" ></Label>
+    </div>
+    <div><label for="Courses">Course & Section</label>
+    <select name="Courses" id="course" >
+    <option value="DICT">DICT</option>
+    <option value="CRIMINOLOGY">CRIMINOLOGY</option>
+    <option value="PSYSCHOLOGY">PSYCHOLOGY</option>
+    </select>
+    <select name="Sections" id="section">
+    <option value="22M1">22M1</option>
+    <option value="22M2">22M2</option>
+    <option value="22M3">22M3</option>
+    </select></div> 
+    <div>
+     <label for="Subject">Subject</label>
+     <select name="Subjects" id="subject" >
+     <option value="Web System And Technologies ">
+         Web System And Technologies</option>
+         <option value="RDBMS">RDBMS</option>
+         <option value="THE CONTEMPORARY WORLD">THE CONTEMPORARY WORLD</option>
+         <option value="STS">STS</option>
+        </select>
+    </div>
+    <br>
+    <div>
+    <table>
+    <tr>
+    <td><label for="PRELIM">PRELIM GRADE </label>
+    <td><input type="number" id="prelim" name="pre" required></td>
+    </tr>
+    <tr>
+    <td><label for="MIDTERM">MIDTERM GRADE</label></td> 
+    <td><input type="number" id="midterm" name="mid" required></td>
+    </tr>
+    <tr>
+    <td><label for="FINAL">FINAL GRADE </label></td>
+    <td><input type="number" id="final" name="fin" required></td>
+    </tr>
+    </table>
+    </div>
+    <div>
+    <button type ="button"onclick="calculateGrade()">Calculate Grade</button>
+    </div>
+    <br>
+    <div id="Name"></div>
+    <br>
+    <div id="Courses"></div>
+    <br>
+    <div id="Section"></div>
+    <br>
+    <div id="Subjects"></div>
+    <br>
+    <div id="result"></div>
+    <br>
+    <div id="Equivalent Grades"></div>
+    <br>
+    <div id="Graderemarks"></div>
+</fieldset>
+</body>
+</html>
