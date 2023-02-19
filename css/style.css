@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:url(/image/school1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+fieldset{
+    background-color: rgba(0, 255, 255, 0.5);
+    position: absolute;
+    width: 50%;
+    height:25%;
+    margin-right: 100px;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+.overlay{
+    background-color: rgba(236, 223, 223, 0.1);
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+}
+h1{
+    height: 50%;
+    width: 100%;
+    margin-left: 450px;
+    margin-top: 20px;
+    font-size: 50px;
+    -webkit-text-stroke: 3px white;
+    position: relative;
+}
+legend{
+    font-size: 35px;
+    margin-left: 1%;
+    -webkit-text-stroke: 0.5px white;
+}
+label{
+    font-style: solid;
+    margin-left: 1%;
+    font-size: 35px;
+    margin-top: 10px;
+    -webkit-text-stroke: 0.5px;
+}
+img{
+    height: 160px; 
+    width:160px;
+    position: absolute;
+    margin-left: 13%;
+    margin-top: -20px;
+}
+button{
+    margin-left: 50%;
+    font-size: xx-large;
+    
+}
+button:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+
