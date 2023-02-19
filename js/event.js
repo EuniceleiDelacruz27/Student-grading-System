@@ -10,7 +10,12 @@ function calculateGrade(){
     var midterm = parseInt(document.getElementById("midterm").value);
     var final = parseInt(document.getElementById("final").value);
     
+     if(!name=="" && prelim>0 && midterm>0 && final>0) 
+     {
 
+
+     
+     
     
     var total = prelim + midterm + final;
     var grade = (total / 3).toFixed(2);
@@ -69,6 +74,9 @@ function calculateGrade(){
 
      var gradeRemarks = document.getElementById("Graderemarks");
      gradeRemarks.innerHTML = `You Grade Remarks is : ${Remarks}`;
- 
+     } 
+     else{
+          alert("Please fill up all the input fields!");
+     }   
 }
 
