@@ -11,18 +11,27 @@ body{
     place-content: center;
     min-height: 100vh;
 	font-family: arial;
-	background: url(/image/img2.jpg);
-	background-size: cover;
+	background-image: url("/image/360_F_440061894_r4YLuVykiivBDz7tj1Uvk8tli8T6bn2I.jpg");
+	background-size: contain;
 	background-repeat: no-repeat;
+    -webkit-background-composite: border;
+}
+.logo{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-left: 85%;
 }
 
  h1{
     text-align: center;
-    background-color: yellow;
-    color: blue;
+    background-color: blue;
+    color: white;
     border-radius: 10px;
     box-shadow:0px 10px 10px 0px #000;
     opacity: 70%;
+
+
 }
 .main{
     position: absolute;
@@ -35,7 +44,7 @@ body{
     position: absolute;
     width: 250px;
     height: 400px;
-    background-color: silver;
+    background-color: yellow;
     box-shadow:0px 10px 10px 0px #000;
     border-radius: 10px;
     opacity: 90%;
@@ -93,7 +102,7 @@ body{
     font-family: "Century";
 	font-size: 15px;
 	font-weight: bold;
-	background: rgb(5, 128, 165);
+	background:  #00203fff;
 	width: 150px;
 	padding: 10px;
 	text-align: center;
@@ -112,8 +121,8 @@ body{
 
 }
  .Button:hover  {
-    color: yellow;
-
+    color: white;
+background-color: blue;
 }
 
 
@@ -123,10 +132,10 @@ body{
     height: 400px;
     color: white;
     margin-left: 250px;
-    background-color: #018786;
+    background-color: blue;
     box-shadow:0px 10px 10px 0px #000;
     border-radius: 5px;
-    opacity: 90%;
+    opacity: 70%;
 }
 
 .right-box legend{
@@ -136,5 +145,8 @@ body{
     font-weight: 800;
     letter-spacing: 3px;
     color: white;
-    background-color: blue;
+    background-color: #00203fff;
+}
+.sr{
+    color: white;
 }
