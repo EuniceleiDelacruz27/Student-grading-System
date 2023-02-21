@@ -9,29 +9,41 @@
 body{
     display: grid;
     place-content: center;
-    min-height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    min-height: 90vh;
 	font-family: arial;
 	background-image: url("/image/360_F_440061894_r4YLuVykiivBDz7tj1Uvk8tli8T6bn2I.jpg");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
     -webkit-background-composite: border;
 }
-.logo{
+ .logo{
+    background-image: url(/image/received_1920030664996864.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-top: -45px;
+    margin-left: 3px;
     position: absolute;
-    height: 300px;
-    width: 300px;
-    margin-left: 85%;
-}
-
+ }
  h1{
+    text-align: right;
+    color: yellow;
+    font-weight: 15px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: blue;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
     text-align: center;
     background-color: blue;
     color: white;
     border-radius: 10px;
     box-shadow:0px 10px 10px 0px #000;
     opacity: 70%;
-
-
 }
 .main{
     position: absolute;
@@ -39,6 +51,7 @@ body{
     height: 400px;
     box-shadow: 0px 10px 10px 0px;
     background-color: blue;
+    
 }
 .container{
     position: absolute;
@@ -149,4 +162,58 @@ background-color: blue;
 }
 .sr{
     color: white;
+}
+.boxName{
+    height: 20px;
+    width: 180px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.boxCourse{
+    height: 20px;
+    width: 180px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.boxSubject{
+    height: 20px;
+    width: 180px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.boxFG{
+    height: 20px;
+    width: 180px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.boxEG{
+    height: 20px;
+    width: 180px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.boxRemarks{
+    height: 20px;
+    width: 180px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 0px;
 }
