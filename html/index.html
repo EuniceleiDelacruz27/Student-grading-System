@@ -14,59 +14,58 @@
         <h1>LYCEUM OF ALABANG</h1>
         <h2>STUDENT GRADING SYSTEM</h2>
         <div class="container">        
-    <fieldset >
-    <legend class="Sr">Student Record</legend> 
+    <fieldset>
+    <legend class="Sr" >Student Record</legend> 
+    <form id="srForm">
      <div class="name">
-      <input type="text" id="Names" placeholder=
-       "Last Name, First Name M.I" >
+      <input type="text" name="name" pattern = "[A-Za-z]{2,}" id="Names" placeholder=
+       "Last Name, First Name M.I" required/>
      </div>
      <div class="Courser&Sec">
-        <input type="text" id="Course" placeholder=
-         "Course & Section" >
+        <input type="text" name="Course" pattern = "[A-Za-z]{2,}"id="Course" placeholder=
+         "Course & Section" required/>
      </div>
      <div class="Subj">
-        <input type="text" id="Subject" placeholder=
-         "Subject" >
+        <input type="text" name="Subject" pattern = "[A-Za-z]{2,}" required id="Subject" placeholder=
+         "Subject" required/>
      </div>
      <div class="Prelim">
         <input type="number" id="Prelim" placeholder=
-         "Prelim" >
+         "Prelim" required/>
      </div>
      <div class="Midterm">
         <input type="number" id="Midterm" placeholder=
-         "Midterm" >
+         "Midterm"required/>
      </div>
      <div class="Final">
         <input type="number" id="Final" placeholder=
-         "Final" >
-        </div>
+         "Final" required/></form></div>
          <div>
-            <button class="Button" type ="button"  onclick="calculateGrade()">Calculate Grade</button>
+            <button class="Button" type ="button"  onclick=
+            "calculateGrade()">Calculate</button>
+            <button class="Button" type ="button"  onclick=
+            "resetForm()">Reset</button>
          </div>
      </div>
     </div>
     </fieldset>
     <div class="container1">
     <div class="right-box">
-    <fieldset>
+    <fieldset >
     <legend>RESULT</legend>
-    <label for="Name">Name :<div class="boxName" id="Name">
-    </label></div><br>
-    <label for="Course">Course :<div class=
-        "boxCourse"id="Courses"></label>
-    </div><br>
-    <label for="Subject">Subject :<div class=
-    "boxSubject" id="Subjects"></label>
-    </div><br>
-    <label for="FinalGrade">Final Grade :<div class=
-    "boxFG" id="result"></label>
-    </div><br>
-    <label for="EquivalentGrade">
-    Equivalent Grade :<div class=
-    "boxEG" id="Equivalent Grades"></label></div><br>
-    <label for="Graderemarks">Remarks :<div class=
-    "boxRemarks"id="Graderemarks"></label>
-    </div><br><br></fieldset> 
+    <textarea name="name"  id="Name" cols="30" rows="15" placeholder=
+    "Name" readonly ></textarea><br><br>
+    <textarea name="Course" id="Courses" cols="30" rows="5" placeholder=
+    "Course & Section" readonly></textarea><br><br>
+    <textarea name="Subject" id="Subjects" cols="30" rows="5" placeholder=
+    "Subject" readonly></textarea><br><br>
+    <textarea name="FinalGrade" id="result" cols="30" rows="5" placeholder=
+    "Final Grade" readonly></textarea><br><br>
+    <textarea name="EquivalentGrade" id="EquivalentGrades" cols="30" rows="5" placeholder=
+    "Equivalent Grade" readonly></textarea><br><br>
+    <textarea name="Graderemarks" id="Graderemarks" cols="30" rows="5" placeholder=
+    "Remarks" readonly></textarea><br><br><br><br>
+   </fieldset> 
      </div> 
      </div>
 </body>

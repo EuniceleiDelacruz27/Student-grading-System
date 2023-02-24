@@ -111,12 +111,13 @@ h2{
     padding-right: 50px;
     margin-bottom: 10px;
 }
+
 .Button{
     font-family: "Century";
-	font-size: 15px;
+	font-size: 10px;
 	font-weight: bold;
 	background:  #00203fff;
-	width: 150px;
+	width: 90px;
 	padding: 10px;
 	text-align: center;
 	text-decoration: none;
@@ -124,8 +125,8 @@ h2{
 	color: #fff;
 	border-radius: 10px;
 	cursor: pointer;
-	margin-left: 40px;
-    margin-top: 10px;
+	margin-left: 20px;
+    margin-top: 35px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	-webkit-transition-propety: box-shadow, transform;
 	transition-property: box-shadow, transform;
@@ -137,6 +138,7 @@ h2{
     color: white;
 background-color: blue;
 }
+
 
 
 .right-box{
@@ -163,57 +165,57 @@ background-color: blue;
 .sr{
     color: white;
 }
-.boxName{
-    height: 20px;
+#Name{
+    height: 30px;
     width: 180px;
     color: black;
     font-weight: bolder;
     background-color: white;
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#Courses{
+    height: 30px;
+    width: 180px;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+    margin-left: 40px;
     margin-top: 0px;
 }
-.boxCourse{
-    height: 20px;
+#Subjects{
+    height: 30px;
     width: 180px;
     color: black;
     font-weight: bolder;
     background-color: white;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 0px;
 }
-.boxSubject{
-    height: 20px;
+#result{
+    height: 30px;
     width: 180px;
     color: black;
     font-weight: bolder;
     background-color: white;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 0px;
 }
-.boxFG{
-    height: 20px;
+#EquivalentGrades{
+    height: 30px;
     width: 180px;
     color: black;
     font-weight: bolder;
     background-color: white;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 0px;
 }
-.boxEG{
-    height: 20px;
+#Graderemarks{
+    height: 30px;
     width: 180px;
     color: black;
     font-weight: bolder;
     background-color: white;
-    margin-left: 50px;
-    margin-top: 0px;
-}
-.boxRemarks{
-    height: 20px;
-    width: 180px;
-    color: black;
-    font-weight: bolder;
-    background-color: white;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 0px;
 }
