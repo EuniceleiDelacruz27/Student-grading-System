@@ -1,25 +1,13 @@
 window.onresize = function() {
-     alert("The window has been resized!");  
-    }
+    alert("The window has been resized!");  
+   }
+   
 
-
-      
-
-function resetForm(){
-        document.getElementById("srForm").reset();
-        document.getElementById("Name").value="";
-        document.getElementById("Courses").value="";
-        document.getElementById("Subjects").value="";
-        document.getElementById("result").value="";
-        document.getElementById("EquivalentGrades").value="";
-        document.getElementById("Graderemarks").value="";
-}
-
-function calculateGrade(){
+ 
+   function calculateGrade(){
     //getting the record and grades.
           
-
-
+   
     var name = document.getElementById("Names").value;
     var subject = document.getElementById("Subject").value;
     var course = document.getElementById("Course").value;
@@ -88,9 +76,10 @@ function calculateGrade(){
     
     }
      //getting the Result.
-
+     
+   
      const studname = document.getElementById("Name");
-     studname.textContent = ` ${name}`;
+     studname.innerHTML = ` ${name}`;
      
      const studCourse = document.getElementById("Courses");
      studCourse.innerHTML = ` ${course}`;
@@ -101,15 +90,13 @@ function calculateGrade(){
      const resultDiv = document.getElementById("result"); 
      resultDiv.innerHTML = ` ${grade}`;
 
-     var equivalentGradeAve = 
-     document.getElementById("EquivalentGrades");
-     equivalentGradeAve.innerHTML = 
-    ` ${equivalentGrade}`;
+     var equivalentGradeAve = document.getElementById("EquivalentGrades");
+     equivalentGradeAve.innerHTML = ` ${equivalentGrade}`;
 
      var gradeRemarks = document.getElementById("Graderemarks");
      gradeRemarks.innerHTML = ` ${Remarks}`;
                            
- 
+
  }
   else{
      alert("Please fill up all the input fields!");
@@ -118,5 +105,10 @@ function calculateGrade(){
     
  
 }
-
+function resetForm(){
+     
+        document.getElementById("Record").reset();
+        document.getElementById("Result").reset();
+    
+       }
 
