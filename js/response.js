@@ -1,4 +1,8 @@
-        function calculateGrade(){
+
+   
+
+ 
+   function calculateGrade(){
     //getting the record and grades.
           
    
@@ -73,22 +77,22 @@
      
    
      const studname = document.getElementById("Name");
-     studname.innerHTML = ` ${name}`;
+     studname.value = ` ${name}`;
      
      const studCourse = document.getElementById("Courses");
-     studCourse.innerHTML = ` ${course}`;
+     studCourse.value = ` ${course}`;
  
      const studSubj = document.getElementById("Subjects");
-     studSubj.innerHTML = ` ${subject}`;
+     studSubj.value = ` ${subject}`;
 
      const resultDiv = document.getElementById("result"); 
-     resultDiv.innerHTML = ` ${grade}`;
+     resultDiv.value = ` ${grade}`;
 
      var equivalentGradeAve = document.getElementById("EquivalentGrades");
-     equivalentGradeAve.innerHTML = ` ${equivalentGrade}`;
+     equivalentGradeAve.value = ` ${equivalentGrade}`;
 
      var gradeRemarks = document.getElementById("Graderemarks");
-     gradeRemarks.innerHTML = ` ${Remarks}`;
+     gradeRemarks.value = ` ${Remarks}`;
                            
 
  }

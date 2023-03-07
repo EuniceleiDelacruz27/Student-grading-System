@@ -9,7 +9,7 @@ body{
 button{
     color: white;
     background-color: blue;
-    border-radius: 10px;
+    border-radius: 30px;
 	cursor: pointer;
 }
 .Button:hover  {
