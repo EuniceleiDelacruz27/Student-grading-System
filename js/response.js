@@ -1,10 +1,4 @@
-window.onresize = function() {
-    alert("The window has been resized!");  
-   }
-   
-
- 
-   function calculateGrade(){
+        function calculateGrade(){
     //getting the record and grades.
           
    
