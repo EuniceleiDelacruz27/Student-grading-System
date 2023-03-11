@@ -100,6 +100,7 @@
      alert("Please fill up all the input fields!");
      
   }
+  return false;
     
  
 }

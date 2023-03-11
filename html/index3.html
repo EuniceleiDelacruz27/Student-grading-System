@@ -14,23 +14,23 @@
 </head>
 <body>
 
-    <div class="container-sm mt-3">
-        <div class="row1">
-           <div class="col bg-primary m-1 p-3 text-center text-white">
+    <div class="container-md mt-3">
+        <div class="row">
+           <div class="col m-1 p-3 text-center text-white">
        <img src="/image/received_1920030664996864.webp" align ="left" alt="logo" style="width: 100px; height: 100px;" >
        <h1>LYCEUM OF ALABANG</h1>
        <h3>STUDENT GRADING SYSTEM</h3>
            </div>
        </div>
 
-       <div class="row2">
-        <div class="col-sm bg-warning text-dark border m-1 p-2">
+       <div class="row">
+        <div class="col-sm text-dark border m-1 p-5">
 
             <center><h4>Student Record</h4></center>
 
-            <form id="Record">
+            <form id="Record" onsubmit="return calculateGrade()">
 
-            <div><input type="text" name="Name" class="form-control" pattern = "[A-Za-z] {2,}" 
+            <div class="col-8"><input type="text" name="Name" class="form-control-- inputsize mb-2" pattern = "[A-Za-z\d]*" 
             id="Names" placeholder="Last Name, First Name M.I" required/></div>
 
             <div><input type="text" name="Course" class="form-control" pattern = "[A-Za-z]{2,}"
@@ -54,8 +54,7 @@
              "Final" required/>
            </div>
             
-           <center><button class="Button" type ="button"  onclick=
-            "calculateGrade()">Calculate</button></center>
+           <center><button class="btn-lg" type ="submit" >Calculate</button></center>
 
         </form>
 
@@ -63,7 +62,7 @@
            </div>
         </div>
 
-        <div class="col-sm bg-primary text-dark border m-1 p-2">
+        <div class="col-sm  text-dark border m-1 p-2">
 
             <center><h4>Result</h4></center>
 

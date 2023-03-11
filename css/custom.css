@@ -9,10 +9,14 @@ body{
 button{
     color: white;
     background-color: blue;
-    border-radius: 30px;
+    border-radius: 10%;
 	cursor: pointer;
 }
-.Button:hover  {
+button:hover  {
     color: white;
-background-color: blue;
+background-color: lightblue;
+}
+
+.inputsize{
+    width: 70%;
 }
