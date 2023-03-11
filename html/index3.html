@@ -14,87 +14,93 @@
 </head>
 <body>
 
-    <div class="container-md mt-3">
+    <div class="container-md mt-3" id="mainheader">
         <div class="row">
-           <div class="col m-1 p-3 text-center text-white">
+           <div class="col m-1 p-3 text-center text-white border m-1" id="header">
        <img src="/image/received_1920030664996864.webp" align ="left" alt="logo" style="width: 100px; height: 100px;" >
        <h1>LYCEUM OF ALABANG</h1>
-       <h3>STUDENT GRADING SYSTEM</h3>
            </div>
+           <h3>STUDENT GRADING SYSTEM</h3>
        </div>
 
        <div class="row">
-        <div class="col-sm text-dark border m-1 p-5">
+        <div class="col-sm text-dark border m-1 p-5" >
+    
+            <div class="box-1">
 
-            <center><h4>Student Record</h4></center>
+                    <legend class="SR">Student Record</legend>
 
             <form id="Record" onsubmit="return calculateGrade()">
 
-            <div class="col-8"><input type="text" name="Name" class="form-control-- inputsize mb-2" pattern = "[A-Za-z\d]*" 
-            id="Names" placeholder="Last Name, First Name M.I" required/></div>
+            <center><div class="col-8"><input type="text" name="Name" class="form-control mb-2" pattern = "[A-Za-z\d]*" 
+            id="Names" placeholder="Last Name, First Name M.I" required/></div></center>
 
-            <div><input type="text" name="Course" class="form-control" pattern = "[A-Za-z]{2,}"
-            id="Course" placeholder= "Course & Section" required/></div>
+            <center><div class="col-8"><input type="text" name="Course" class="form-control mb-2" pattern = "[A-Za-z\d]*"
+            id="Course" placeholder= "Course & Section" required/></div></center>
 
-           <div><input type="text" name="Subject" class="form-control" pattern = "[A-Za-z]{2,}" 
-           id="Subject" placeholder="Subject" required/></div>
+           <center><div class="col-8"><input type="text" name="Subject" class="form-control mb-2" pattern = "[A-Za-z]{2,}" 
+           id="Subject" placeholder="Subject" required/></div></center>
 
-           <div class="Prelim">
-            <input type="number" id="Prelim" class="form-control" placeholder=
+           <center><div class="col-8">
+            <input type="number" id="Prelim" class="form-control mb-2" placeholder=
              "Prelim" required/>
-           </div>
+           </div></center>
          
-           <div class="Midterm">
-            <input type="number" id="Midterm" class="form-control" placeholder=
+           <center><div class="col-8" >
+            <input type="number" id="Midterm" class="form-control mb-2" placeholder=
              "Midterm" required/>
-           </div>
+           </div></center>
 
-           <div class="Final">
-            <input type="number" id="Final" class="form-control" placeholder=
+           <center><div class="col-8" >
+            <input type="number" id="Final" class="form-control mb-2" placeholder=
              "Final" required/>
-           </div>
+           </div></center>
             
            <center><button class="btn-lg" type ="submit" >Calculate</button></center>
-
+        
         </form>
 
+           </div>
             <div>
            </div>
         </div>
 
-        <div class="col-sm  text-dark border m-1 p-2">
+    <div class="col-sm  text-dark border m-1 p-5">
 
-            <center><h4>Result</h4></center>
+        <div class="box-2">
 
-            <form id="Result">
+            <legend class="RR">Result</legend>
 
-            <div><input name="name"  id="Name" class="form-control"
-                 placeholder= "Name" readonly ></div>
+            <form id="Result" onsubmit="return resetForm()">
+
+            <center><div class="col-8"><input name="name"  id="Name" class="form-control mb-2"
+                 placeholder= "Name" readonly ></div></center>
  
-            <div><input name="Course" id="Courses" class="form-control"
-                 placeholder= "Course & Section" readonly></div>
+            <center><div class="col-8"><input name="Course" id="Courses" class="form-control mb-2"
+                 placeholder= "Course & Section" readonly></div></center>
 
-            <div> <input name="Subject" id="Subjects" class="form-control" placeholder=
-                "Subject" readonly></div>
+            <center><div class="col-8"> <input name="Subject" id="Subjects" class="form-control mb-2" placeholder=
+                "Subject" readonly></div></center>
 
-            <div><input name="FinalGrade" id="result" class="form-control" placeholder=
-                "Final Grade" readonly></div>
+            <center><div class="col-8"><input name="FinalGrade" id="result" class="form-control mb-2" placeholder=
+                "Final Grade" readonly></div></center>
 
-            <div><input name="EquivalentGrade" id="EquivalentGrades" class="form-control" placeholder=
-                "Equivalent Grade" readonly></div>
+            <center><div class="col-8"><input name="EquivalentGrade" id="EquivalentGrades" class="form-control mb-2" placeholder=
+                "Equivalent Grade" readonly></div></center>
             
-            <div><input name="Graderemarks" id="Graderemarks" class="form-control" placeholder=
-                "Remarks" readonly></div>
+            <center><div class="col-8"><input name="Graderemarks" id="Graderemarks" class="form-control mb-2" placeholder=
+                "Remarks" readonly></div></center>
            <div>
 
            </form>
-           
-            <center><button class="Button" type ="button"  onclick=
-            "resetForm()">Reset</button></center>
+       
+            <center><button class="btn-lg" type ="reset" >Reset</button></center>
+        </div>
            </div>
         </div>
        </div>
    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
