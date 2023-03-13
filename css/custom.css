@@ -21,7 +21,7 @@ button:hover  {
     background-color: yellow;
 }
 #header{
-    background-image: linear-gradient(blue,yellow);
+    background-image: linear-gradient(gray,white);
 
 }
 #header h1{
@@ -46,7 +46,7 @@ button:hover  {
     background-color: yellow;
 }
  .col-sm {
-    background-image: url(/image/img1.jpg);
+    background-image: -webkit-linear-gradient(gray,white);
     background-repeat: no-repeat;
 }
 .SR{
